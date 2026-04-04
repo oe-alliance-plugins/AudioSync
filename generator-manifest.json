@@ -1,0 +1,19 @@
+{
+  "branch": "main",
+  "depends_recipe": "",
+  "description_control": "Set Audio delay",
+  "description_recipe": "Set Audio delay",
+  "history_source_dir": "audiosync",
+  "internal_package_name": "enigma2-plugin-extensions-audiosync",
+  "module_dir_name": "AudioSync",
+  "output_subdir": "audiosync",
+  "package_name": "enigma2-plugin-extensions-audiosync",
+  "plugin_src_rel": "audiosync",
+  "python_package": "AudioSync",
+  "rdepends_recipe": "",
+  "replaces": "",
+  "repo_name": "AudioSync",
+  "rrecommends": "",
+  "rreplaces": "",
+  "selected_from_plugin_list": true
+}
