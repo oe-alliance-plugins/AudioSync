@@ -2,12 +2,11 @@ from __future__ import absolute_import
 # for localized messages
 from . import _
 
-from .AC3utils import AC3, PCM, AC3GLOB, PCMGLOB, AC3PCM
+from .AC3utils import AC3, PCM, AC3GLOB, AC3PCM
 from Components.config import config
 from enigma import eTimer
 from Tools.ISO639 import LanguageCodes
 from Components.SystemInfo import BoxInfo
-import os
 import NavigationInstance
 
 
@@ -60,10 +59,10 @@ class AC3delay:
         if self.activateTimer.isActive:
             self.activateTimer.stop()
         if self.bHasToRestartService is True:
-            bInitialized = False
+            # bInitialized = False
             if self.iService is None:
                 self.initAudio()
-                bInitialized = True
+                # bInitialized = True
             if self.iServiceReference is not None:
                 lCurPosition = self.cueGetCurrentPosition()
                 self.deleteAudio()

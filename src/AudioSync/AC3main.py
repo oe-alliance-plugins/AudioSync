@@ -203,8 +203,8 @@ class AC3LipSync(Screen, HelpableScreen, MovableScreen):
         self.close()
 
     def keyMenu(self):
-        sAudio = self.AC3delay.whichAudio
-        iDelay = self["AudioSliderBar"].getValue() + self.lowerBound
+        # sAudio = self.AC3delay.whichAudio
+        # iDelay = self["AudioSliderBar"].getValue() + self.lowerBound
         keyList = [
             (_("Move plugin screen"), "1")
         ]
@@ -221,7 +221,7 @@ class AC3LipSync(Screen, HelpableScreen, MovableScreen):
                 self.session.open(MessageBox, sResponse, iType)
 
     def menuSaveDelayToKey(self):
-        sAudio = self.AC3delay.whichAudio
+        # sAudio = self.AC3delay.whichAudio
         iDelay = self["AudioSliderBar"].getValue() + self.lowerBound
 
         AC3SetCustomValue(self.session, iDelay, self.keyStep)
@@ -235,8 +235,8 @@ class AC3LipSync(Screen, HelpableScreen, MovableScreen):
 
     def setChannelInfoText(self):
         sActiveAudio = str(self.AC3delay.selectedAudioInfo[0])
-        sBitstreamDelay = _("%i ms") % self.AC3delay.systemDelay[AC3]
-        sPCMDelay = _("%i ms") % self.AC3delay.systemDelay[PCM]
+        # sBitstreamDelay = _("%i ms") % self.AC3delay.systemDelay[AC3]
+        # sPCMDelay = _("%i ms") % self.AC3delay.systemDelay[PCM]
 
         self["ServiceInfo"].setText(sActiveAudio)
 
