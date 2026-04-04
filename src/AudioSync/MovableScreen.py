@@ -3,12 +3,10 @@ from __future__ import absolute_import
 from . import _
 
 from .HelpableNumberActionMap import HelpableNumberActionMap
-from Components.config import config
-from .__init__ import _
 from enigma import ePoint, eTimer, getDesktop
 
 
-class MovableScreen():
+class MovableScreen:
     def __init__(self, configRoot, disableKeymaps, screenSize_x, screenSize_y, moveMinMargin=30, moveStepSize=10):
         self.configRoot = configRoot
         self.disableKeymaps = disableKeymaps

@@ -3,15 +3,12 @@ from __future__ import absolute_import
 from . import _
 
 from .AC3utils import PLUGIN_BASE, PLUGIN_VERSION
-from Components.ActionMap import ActionMap, NumberActionMap
+from Components.ActionMap import NumberActionMap
 from Components.Sources.StaticText import StaticText
 from Components.Sources.Boolean import Boolean
 from Components.ConfigList import ConfigListScreen
-from Components.Label import Label, MultiColorLabel
-from Components.ProgressBar import ProgressBar
+from Components.Label import Label
 from Components.config import config, getConfigListEntry
-from Screens.ChoiceBox import ChoiceBox
-from Screens.MessageBox import MessageBox
 from Components.Pixmap import Pixmap
 from Screens.Screen import Screen
 

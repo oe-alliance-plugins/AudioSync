@@ -1,6 +1,4 @@
 from __future__ import absolute_import
-# for localized messages
-from . import _
 
 from .AC3utils import AC3, PCM, AC3GLOB, AC3PCM
 from Components.config import config

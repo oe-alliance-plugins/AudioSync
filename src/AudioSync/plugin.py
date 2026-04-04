@@ -2,9 +2,8 @@ from __future__ import absolute_import
 # for localized messages
 from . import _
 
-from Components.config import config, ConfigSubsection, ConfigInteger, ConfigSubList
+from Components.config import config, ConfigSubsection, ConfigInteger
 from Plugins.Plugin import PluginDescriptor
-from Screens.MessageBox import MessageBox
 from . import AC3main
 from . import AC3setup
 
@@ -14,8 +13,6 @@ try:
 except ImportError:
 	from boxbranding import getImageDistro
 	IMAGEDISTRO = getImageDistro()
-
-from six.moves import reload_module
 
 
 config.plugins.AC3LipSync = ConfigSubsection()
